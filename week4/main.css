@@ -1,0 +1,36 @@
+body {
+  font-family: Sans-Serif;
+}
+h1,h2,h3 {
+	font-size:120%;
+}
+h1::first-letter {
+	font-size:200%;
+}
+header img {
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 2em;
+}
+header h2 {
+	font-size: 250%;
+	font-style: italic;
+	color: #ef9c00;
+	text-shadow: 2px 2px 2px black;
+}
+main {
+	clear:left;
+} 
+li {
+	margin-bottom: 5px;
+}
+a { 
+	font-weight: bold; 
+	color: #ef9c00;
+}
+a:link {color: #ef9c00; }
+a:hover, a:focus { color: green; }
+footer{
+	font-size: 80%;
+	text-align: center;
+}
