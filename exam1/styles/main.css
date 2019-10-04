@@ -1,0 +1,269 @@
+/* Site wide styles */
+body {
+	width: 900px;
+	margin: 20px auto;
+	box-shadow: 5px 5px 40px 25px rgba(37,18,217,0.7);
+	border-radius: 10px;
+	overflow: auto;
+   }
+header {
+   background: linear-gradient(19deg, #21D4FD, #B721FF);
+   height: 10%;
+   width: auto;
+}
+h2 {
+	font-family: cursive;
+}
+header img {
+	width: 80px;
+}
+header h2 {
+	text-transform: uppercase;
+	display: inline;
+	position: absolute;
+	top: 0;
+	padding: 25px;
+	font-size: 150%;
+	text-shadow: 10px 0px 7px rgba(0,0,0,.8);
+}
+header ul {
+	list-style-type: none;
+	float: right;
+	margin-top: 7%;
+	margin-bottom: 0;
+	padding: 2px 5px;
+}
+header ul li {
+	font-family: 'Times New Roman', Times, serif;
+	display: inline;
+	padding: 8px 7px 2px 30px;
+	margin:0;
+	box-shadow: -5px 10px 12px 3px rgba(0,0,0,0.8);
+	border-color:transparent #21D4FD transparent transparent;
+}
+header a {
+	color: rgb(221, 216, 216);
+	font-weight: bold;
+	text-decoration: none;
+	text-align: right;
+}
+#books {
+	background: url('../images/books.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+}
+#d2l {
+	background: url('../images/d2l.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+}
+#portal {
+	background: url('../images/portal.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 20px 25px;
+}
+#mnsu {
+	background: url('../images/mnsu.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 20px 25px;
+}
+
+aside {
+	margin: 0;
+	height: 600px;
+}
+aside h4 {
+	text-align: right;
+	background: linear-gradient(19deg, #21D4FD, #B721FF);
+	padding: 10px;
+	margin-bottom: 40px;
+	max-width: 160px;
+}
+aside ul {
+	list-style-type: none;
+	padding: 5px 0;
+	max-width: 180px;
+}
+aside ul li {
+	background-image: linear-gradient(to right, #abb3be, #778aac, #4c6098, #283781, #090964);	
+	padding: 5px;
+	margin: 10px auto;
+	height: 25px;
+	text-align: right;
+	box-shadow: -2px -2px 7px 4px rgba(37,18,217,0.61);
+	transform-origin: 0px 0px;
+    transform: skewY(-10deg);
+}
+aside ul a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #D9E7EB;
+	text-shadow: -5px 0px 5px rgba(233, 227, 227, 0.8);
+}
+main {
+	float: left;
+	height: 80%;
+	overflow: hidden;
+}
+footer {
+	background-image: linear-gradient(to right, #f1f4f8, #afebfe, #58e4dd, #4dd58e, #8abc18);
+	box-shadow: 0px -10px 40px 5px rgba(0,0,0,0.85);
+	clear: both;
+	height: 10%;
+	width: 100%;
+	
+}
+footer p {
+	padding: 5px;
+	text-align: center;
+}
+.current {
+	border-radius: 0 10em 10em 0;
+}
+/* index.html style */
+
+#sidebarA {
+	float: left;
+	width: 20%;
+}
+#homemain {
+	max-width: 40%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contentmain h2, #homemain h2 {
+	color: #7c795d; 
+	font-family: 'Trocchi', serif; 
+	font-size: 35px; 
+	font-weight: normal; 
+	line-height: 48px; 
+	border-radius: 0 0 85% 85% / 30%;
+	margin: 0;
+	padding: 8px 0;
+}
+#homemain ol >li{
+	background: #e4e9ed;
+	margin-bottom: 5px;
+	padding: 1px;
+	box-shadow: -6px -5px 15px 0px rgba(62, 63, 70, 0.75);
+	clear: both;
+	min-height: 100px;
+}
+#homemain ul {
+	width: 60%;
+	float: right;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+#homemain ul li {
+	padding: 5px 0px 5px 30px;
+	margin: 0px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 16px;
+}
+.coursename{
+	background-image: url("../images/coursename.png");
+}
+.location{
+	background-image: url("../images/location.png");
+}
+.date{
+	background-image: url("../images/date.png");
+}
+.time{
+	background-image: url("../images/time.png");
+}
+#homemain img {
+	width: 100px;
+}
+main h2 {
+	text-align: center;
+}
+#sidebarB {
+	float: right;
+	width: 40%;
+}
+#wrap {
+	width:100%;
+	height:820px;
+	padding:0;
+	position:relative;
+	left:0px;
+	top:0px;
+	overflow: hidden;
+}
+#frame {
+	width:200%;
+	height:200%;
+	position:relative;
+	left:0px;
+	top:0px;
+	overflow:scroll;
+	-ms-zoom: 0.5;
+        -moz-transform: scale(0.5);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.5);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+}
+
+/* other pages styles */
+
+.sidebarC {
+	float: left;
+	width: 30%;
+}
+.contentmain {
+	max-width: 70%;
+	
+}
+.courselist {
+	margin: 0 auto;
+	
+}
+.courselist li {
+	height:35px;
+	line-height:35px;
+	position:relative;
+	font-size:18px;
+	margin-bottom: 12px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	transition: background-color 1.5s ease;
+	padding:0 60px 0 12px;
+	background:#21D4FD;
+	color:#fff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.courselist li:before{
+	float:left;
+	position:absolute;
+	top:0;
+	left:-15px;
+	width:0;
+	height:0;
+	border-color:transparent #21D4FD transparent transparent;
+	border-style:solid;
+	border-width: 18px 15px 18px 0;
+	content:"";
+	
+}
+.courselist li:after{
+	content:"";
+	position:absolute;
+	top:15px;
+	left:0;
+	float:left;
+	width:6px;
+	height:6px;
+	border-radius:2px;
+	background:#fff;
+	box-shadow:-1px -1px 2px #21D4FD;
+	}
