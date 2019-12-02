@@ -57,7 +57,7 @@ input {
 /*preloded images*/
 body:after{
 	display: none;
-	content: url('../images/espresso_info.jpg') url('../images/latte_info.jpg') url('../images/cappuccino_info.jpg') url('../images/coffee_info.jpg') url('../images/biscotti_info.jpg') url('../images/scone_info.jpg');
+	content: url('../images/espresso_info.jpg') url('../images/latte_info.jpg') url('../images/cappuccino_info.jpg') url('../images/coffee_info.jpg') url('../images/biscotti_info.jpg') url('../images/scone_info.jpg') url('../images/espresso.jpg') url('../images/latte.jpg') url('../images/cappuccino.jpg') url('../images/coffee.jpg') url('../images/biscotti.jpg') url('../images/scone.jpg');
 }
 
 hr {
