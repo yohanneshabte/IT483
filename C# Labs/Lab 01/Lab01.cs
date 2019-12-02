@@ -31,17 +31,16 @@ namespace Labs
             fancy = (f == 'y') || (f == 'Y');
 
             //Make suggestion
-            if (spicy) {
+            if (spicy)
                 if(fancy)
                     Console.WriteLine("I suggest you go to Thai Garden Palace.");
                 else
                     Console.WriteLine("I suggest you go to Albreto's Tacqueria.");
-            } else {
+            else
                 if(fancy)
                     Console.WriteLine("I suggest you go to Chez Paris.");
                 else
                     Console.WriteLine("I suggest you go to Joe's Diner.");
-            }
         }
     }
 }
