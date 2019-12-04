@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+
+<head>
+    <title>Halloween Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main_rwd.css">
+</head>
+<body>
+		<header>
+                <img src="images/pumpkin.gif" alt="pumpkin"/>
+                <h2>The Halloween Store</h2>
+                <h3>For the little Goblin in all of us!</h3>
+        </header>
+        <nav>
+            <ul id="horizontalnav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products/index.html">Product List</a></li>
+                <li><a href="#">Personal</a></li>
+                <li><a href="#">Decorating Ideas</a>
+                    <ul>
+                       <li><a href="#">Outdoor</a></li> 
+                       <li><a href="#">Indoor</a></li> 
+                       <li><a href="#">Table</a></li> 
+                       <li><a href="#">Treats</a></li> 
+                    </ul>
+                </li>
+                <li><a style="color: #ef9c00" href="email.html">Join Email</a></li>
+            </ul>
+        </nav>
+        <main>
+            <aside>
+                <ul id="verticalnav">
+                <li><a rel="noopener" href="products/index.html#props">Props</a></li>
+                <li><a rel="noopener" href="products/index.html#costumes">Costumes</a></li>
+                <li><a rel="noopener" href="products/index.html#special">Special FX</a></li>
+                <li><a rel="noopener" href="products/index.html#masks">Masks</a></li>
+                </ul>
+            </aside>
+           	<form action="subscribe.html" method="GET">
+                <h1>Please enter the following information:</h1>
+                <label>First name: </label><input type="text" name="first" /><br>
+                <label>Last name: </label><input type="text" name="last" /><br>
+                <label>Email: </label><input type="email" name="email" /><br>
+                <label>Zip Code: </label><input type="text" name="zip" placeholder="Optional but appreciated: 99999" maxlength="5"/><br>
+                <input type="submit" value="Subscribe" />
+            </form>	
+        </main>
+        <footer>
+            <p>&#169; 2018 Ben Murach</p>
+        </footer>
+    </body>
+</html>

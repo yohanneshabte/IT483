@@ -1,0 +1,220 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 95%;
+	max-width: 960px;
+    margin: 0 auto;
+	border: 3px solid black;
+	background: white;
+	box-shadow: 0px 5px 12px 10px black;
+	padding-bottom: 0;
+}
+html {
+	background-image: url("../images/bats.gif");
+	background-repeat: repeat;
+}
+h1, h2 {
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	margin-bottom: 1em;
+}
+h1 {
+	padding-bottom: .25em;
+}
+#caption, #gallery {
+	text-align: center;
+}
+h1,h2,h3 {
+	font-size: 140%;
+}
+h1 {
+	font-size: 150%;
+}
+#mainheader { padding-bottom: 0; }
+#mainheader::first-letter {
+	font-size:200%;
+}
+header {
+	padding: 1.5em;
+	border-bottom: 3px solid black;
+	background: -webkit-linear-gradient(45deg, #FFF, #ef9c00 75%, rgb(31, 16, 16) 100%);
+	background: -moz-linear-gradient(45deg, #FFF, #ef9c00 75%, #000 100%);
+	background: -o-linear-gradient(45deg, #FFF, #ef9c00 75%, #000 100%);
+	background: -ms-linear-gradient(45deg, #FFF, #ef9c00 75%, #000 100%);
+}
+header img {
+	float: left;
+	margin-right: 1em;
+}
+header h2 {
+	font-size: 250%;
+}
+header h3 {
+	margin: 0;
+	padding-left: 1em;
+}
+main {
+	padding: 1.5em 1.5em 1.5em 0;
+	position: relative;
+} 
+main h2 {
+	margin: 5px;
+}
+main p {
+	margin-top: 2px;
+	padding: 0;
+}
+a { 
+	font-weight: bold; 
+	color: #ef9c00;
+}
+a:link {color: #ef9c00; }
+a:hover, a:focus { color: green; }
+footer{
+	clear: both;
+	background: -webkit-linear-gradient(45deg, #000, #ef9c00 25%, #fff 100%);
+	background: -moz-linear-gradient(45deg, #000, #ef9c00 25%, #fff 100%);
+	background: -o-linear-gradient(45deg, #000, #ef9c00 25%, #fff 100%);
+	background: -ms-linear-gradient(45deg, #000, #ef9c00 25%, #fff 100%);
+	padding: 10px;
+	font-size: 80%;
+	text-align: center;
+	border-top: 3px solid black;
+}
+
+
+/* main updates for short exercise 5 */
+aside {
+	margin: 0 25px 0 0;
+	height: 100%;
+	width: 160px;
+	float: left;
+	height: 700px;
+}
+li {
+	padding-bottom: 5px;
+}
+#catlink {
+	display: block;
+}
+
+
+/* main updates for short exercise 6 */
+#verticalnav {
+	list-style-type: none;
+	margin-right: 1em;
+	width: 60%;
+}
+#verticalnav li {
+	border: 1px solid black;
+	padding: 0;
+	margin-bottom: .5em;
+	background: #ef9c00; 
+}
+#verticalnav li a {
+	color: black;
+	display: block;
+	padding: .4em;
+	text-decoration: none;
+}
+
+#horizontalnav {
+	list-style-type: none;
+	margin: 0;
+	background: black;
+	padding: 0;
+	position: relative;
+}
+#horizontalnav li {
+	display: inline-block;
+	list-style-type: none;
+	text-align: center;
+}
+#horizontalnav li a {
+	display: inline-block;
+	width: 11rem;
+	color: white;
+	text-decoration: none;
+	padding: .5em 0;
+	font-weight: 100;
+}
+#horizontalnav li ul {
+	position: absolute;
+	background: black;
+	display: none;
+	padding: 0;
+	z-index: 999;
+}
+#horizontalnav li ul li {
+	float: none;	
+	padding: 0;
+}
+#horizontalnav li ul li:hover {
+	float: none;
+	background: gray;
+}
+#horizontalnav li:hover > ul {
+	display: block;
+	width: 11rem;
+}
+#horizontalnav::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+@media screen and (max-width: 580px) {
+	header h2 {
+		font-size: 6vw;
+	}
+	header h3 {
+		font-size: 3.5vw;
+	}
+	#horizontalnav li {
+		text-align: center;
+		display: block;
+	}
+	#horizontalnav li a {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	#horizontalnav li:hover > ul {
+		background: rgb(0, 0, 0, 0.9);
+		width: 100%;
+		box-shadow: 5px 5px 10px 3px black;
+	}
+}
+
+
+/* updates for short exercise 7 part 9 */
+table {
+	text-align: left;
+	width: 50%;
+}
+table caption {
+	font-size: 200%;
+	font-weight: 900;
+}
+table th {
+	color: gray;
+}
+table th:last-child {
+	text-align: right;
+}
+table tr {
+	height: 1.8em;
+}
+table td[rowspan] {
+	vertical-align: top;
+	font-weight: 900;
+}
+table td > a {
+	color: black !important;
+	font-weight: 100;
+}
+table td:last-child {
+	text-align: right;
+	background: rgb(239,156,0,.4);
+	width: 12%;
+}

@@ -1,0 +1,25 @@
+body {
+    border: 3px blue solid;
+    width: 35%;
+    margin: 0 auto;
+    padding: 2em;
+}
+h1{
+    color: blue;
+}
+label {
+    text-align: right;
+    width: 40%;
+    display: inline-block;
+}
+input {
+    width: 50%;
+    margin-bottom: 5px;
+}
+input[type='submit'] {
+    width: 30%;
+    margin-left: 45%;
+}
+input[type='checkbox'] {
+    width: 2%;
+}

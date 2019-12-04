@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate Miles Per Gallon</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script type="text/javascript">
+        function clearEntries() {
+            document.getElementById("milesdriven").value = "";
+            document.getElementById("gallonsused").value = "";
+            document.getElementById("mpg").value = "";
+        }
+        function processEntries() {
+            checkValue();
+            var miles = parseFloat(document.getElementById("milesdriven").value);
+            var gallons = parseFloat(document.getElementById("gallonsused").value);
+            document.getElementById("mpg").value = Math.round((miles/gallons) * 10) / 10;
+        }
+        function clearBox(id) {
+            document.getElementById(id).value = "";
+        }
+        function checkValue() {
+            if(document.getElementById("milesdriven").value == "" || document.getElementById("gallonsused").value == "" || document.getElementById("gallonsused").value == 0) 
+                alert("Please enter correct values");
+        }
+        // to use the double click clear method for mpg input field
+        function switchmpgbox() {
+            if(document.getElementById("mpg").disabled == true)
+                document.getElementById("mpg").disabled = false; 
+            else
+                document.getElementById("mpg").disabled = true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculate Miles Per Gallon</h1>
+    <label>Miles Driven: </label>
+    <input type="number" id="milesdriven" onfocus="clearBox('milesdriven')"/><br>
+    <label>Gallons of Gas Used: </label>
+    <input type="number" id="gallonsused" onfocus="clearBox('gallonsused')" onfocusout="processEntries()"/><br>
+    <label>Miles Per Gallon: </label>
+    <input type="number" id="mpg" ondblclick="clearEntries()" disabled/>
+    <input type="checkbox" id="dis" onclick="switchmpgbox()" /><br>
+    <input type="submit" value="Calculate MPG"  onclick="processEntries()" />
+</body>
+</html>
