@@ -1,0 +1,118 @@
+<div class='loader'></div>
+<div class='splash'></div>
+<div class='frame0'></div>
+<div class='frame1'></div>
+<div class='frame2'></div>
+<div class='frame3'>
+  Data Managment App V 0.1
+  <div>
+    
+    <span>Made By Yohannes & Zelalem</span>
+  </div>
+</div>
+<style>
+	@import url(https://fonts.googleapis.com/css?family=Roboto);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../src/assets/background02.jpg) fixed no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.loader {
+  position: absolute;
+  z-index: 1000;
+  background: url(https://camo.githubusercontent.com/c758256c3cd30a1a6aaaa3081c6d9464bd4d3f73/687474703a2f2f692e696d6775722e636f6d2f566568395a4e4f2e676966) 50% 50% no-repeat white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.splash {
+  background: url(../src/assets/home-background.png) fixed no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.frame1 {
+  display: none;
+  background: rgba(93, 129, 228, 0.2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.frame2 {
+  display: none;
+  background: rgba(0, 147, 227, 0.2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.frame3 {
+  background: rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto', serif;
+  text-align: center;
+  font-size: 45px;
+  color: #fff;
+  text-shadow: 0 0 17px #E1C5DE;
+  display: none;
+  padding: 200px 0 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 900;
+}
+.frame3 div {
+  font-size: 20px;
+  justify-content: center;
+  margin-top: -27%;
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="https://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+<script>
+	(function () {
+    $(window).load(function () {
+        setTimeout(function () {
+           $('.loader').fadeOut();
+            start();
+        }, 1500);
+    });
+    $(document).ready(function () {
+        $('.splash').slideToggle(3000);
+        $('.frame1').delay(3200).show('slide', { direction: 'right' }, 1000);
+        $('.frame2').delay(3300).show('slide', { direction: 'left' }, 1000);
+        $('.frame3').delay(3800).slideToggle(1000);
+        $('.frame3').css('line-height', '400px');
+        $('.frame2').delay(4000).hide('slide', { direction: 'left' }, 1000);
+        $('.frame1').delay(4200).hide('slide', { direction: 'right' }, 1000);
+        $('.splash').delay(4500).slideToggle(2000);
+        $('.frame3').delay(4800).transition({
+            scale: [
+                1.2,
+                1.2
+            ],
+            duration: 1000
+        });
+        $('.splash').delay(500).animate({ width: '50%' }, 1000);
+    });
+	}.call(this));
+</script>
